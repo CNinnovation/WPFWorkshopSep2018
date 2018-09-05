@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab 2 real", "Lab 2 real\Lab 2 real.csproj", "{B8332634-D50E-4BA4-BB4B-9E43B21C7C00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEditor", "WPFEditor\WPFEditor.csproj", "{F4C2B6FC-4A66-42E1-A1A4-51E238F9341D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8332634-D50E-4BA4-BB4B-9E43B21C7C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8332634-D50E-4BA4-BB4B-9E43B21C7C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8332634-D50E-4BA4-BB4B-9E43B21C7C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8332634-D50E-4BA4-BB4B-9E43B21C7C00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C2B6FC-4A66-42E1-A1A4-51E238F9341D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C2B6FC-4A66-42E1-A1A4-51E238F9341D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C2B6FC-4A66-42E1-A1A4-51E238F9341D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C2B6FC-4A66-42E1-A1A4-51E238F9341D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EA72C85-FE04-4EA9-A6CF-7260720F65AD}
+	EndGlobalSection
+EndGlobal
