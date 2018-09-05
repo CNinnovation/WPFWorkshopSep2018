@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StopBubbling
+namespace ElementBinding
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,16 +23,6 @@ namespace StopBubbling
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void OnButtonClick(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("clicked");
-        }
-
-        private void OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            e.Handled = true;
         }
     }
 }

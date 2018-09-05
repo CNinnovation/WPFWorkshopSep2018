@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BooksSample.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,26 +14,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StopBubbling
+namespace BooksSample
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Book _book;
         public MainWindow()
         {
+            _book = new BooksFactory().GetTheBook();
+            this.DataContext = _book;
             InitializeComponent();
-        }
 
-        private void OnButtonClick(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("clicked");
-        }
 
-        private void OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            e.Handled = true;
         }
     }
 }
