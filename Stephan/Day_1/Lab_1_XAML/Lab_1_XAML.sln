@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1_XAML", "Lab_1_XAML\Lab_1_XAML.csproj", "{1FE266D3-FEB4-4477-A374-13CB8A339023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1_XAML_2", "Lab_1_XAML_2\Lab_1_XAML_2.csproj", "{2E86317C-442F-4BF5-A1BC-75E05DA32DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FE266D3-FEB4-4477-A374-13CB8A339023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE266D3-FEB4-4477-A374-13CB8A339023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE266D3-FEB4-4477-A374-13CB8A339023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE266D3-FEB4-4477-A374-13CB8A339023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E86317C-442F-4BF5-A1BC-75E05DA32DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E86317C-442F-4BF5-A1BC-75E05DA32DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E86317C-442F-4BF5-A1BC-75E05DA32DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E86317C-442F-4BF5-A1BC-75E05DA32DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B88FA02-CB7F-413A-9ADA-C5E223F192A9}
+	EndGlobalSection
+EndGlobal
