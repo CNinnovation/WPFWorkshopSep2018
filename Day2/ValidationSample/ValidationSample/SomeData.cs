@@ -17,6 +17,8 @@ namespace ValidationSample
             }
         }
 
+        public string Email { get; set; }
+
         public int X2 { get; set; }
 
         public string this[string columnName]

@@ -9,6 +9,15 @@
     <StackPanel>
         
         <TextBox Text="{Binding X1, Mode=TwoWay, ValidatesOnExceptions=True}" Margin="8" />
+        <TextBox Margin="8">
+            <TextBox.Text>
+                <Binding Mode="TwoWay" Path="Email">
+                    <Binding.ValidationRules>
+                        <local:RegExValidationRule Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$." />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
         <TextBox Text="{Binding X2, Mode=TwoWay, ValidatesOnDataErrors=True}" Margin="8" />
         <Button Content="Show Values" Click="OnShow" />
     </StackPanel>

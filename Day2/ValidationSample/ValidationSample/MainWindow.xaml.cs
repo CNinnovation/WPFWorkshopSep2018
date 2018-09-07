@@ -29,7 +29,7 @@ namespace ValidationSample
 
         private void OnShow(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"x1: {_someData.X1}, x2: {_someData.X2}");
+            MessageBox.Show($"x1: {_someData.X1}, x2: {_someData.X2}, Email: {_someData.Email}");
         }
     }
 }
