@@ -13,7 +13,7 @@
             <TextBox.Text>
                 <Binding Mode="TwoWay" Path="Email">
                     <Binding.ValidationRules>
-                        <local:RegExValidationRule Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$." />
+                        <local:RegExValidationRule Expression="^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+.)+[a-z]{2,5}$" />
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>

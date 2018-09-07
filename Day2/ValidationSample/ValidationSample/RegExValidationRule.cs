@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
+﻿using System.Globalization;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Controls;
 
 namespace ValidationSample
@@ -14,8 +9,8 @@ namespace ValidationSample
         public string Expression { get; set; }
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
-            Match m = Regex.Match(value.ToString(), Expression);
-            if (m.Success) return ValidationResult.ValidResult;
+            bool m = Regex.IsMatch(value.ToString(), Expression, RegexOptions.IgnoreCase);
+            if (m) return ValidationResult.ValidResult;
             else return new ValidationResult(false, "reg ex not valid");
         }
     }
