@@ -56,6 +56,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
             <Button Content="Refresh" Command="{Binding ViewModel.RefreshCommand, Mode=OneTime}" />
+            <Button Content="Show Dialog" Command="{Binding ViewModel.ShowDialogCommand, Mode=OneTime}" />
         </StackPanel>
         <ListBox Margin="4"
                  Grid.IsSharedSizeScope="True"

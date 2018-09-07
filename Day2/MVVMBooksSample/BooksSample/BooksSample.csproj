@@ -62,9 +62,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppServices.cs" />
-    <Compile Include="Services\IBooksService.cs" />
     <Compile Include="Utilities\BookDataTemplateSelector.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="WPFServices\WPFDialogService.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -80,8 +79,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Book.cs" />
-    <Compile Include="Services\BooksService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -109,6 +106,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BooksLib\BooksLib.csproj">
+      <Project>{57068b97-f73f-4c71-aad9-9c246324e9d0}</Project>
+      <Name>BooksLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TheBestMVVMFrameworkInTown\TheBestMVVMFrameworkInTown.csproj">
       <Project>{a2d2afe3-9af5-46d2-a193-d483ba77c344}</Project>
       <Name>TheBestMVVMFrameworkInTown</Name>
