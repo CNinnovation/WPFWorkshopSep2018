@@ -59,13 +59,14 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <!--<StackPanel DataContext="{Binding Source={StaticResource BookProvider}}">-->
-        <ListBox
+        <ListBox Margin="4"
                  Grid.IsSharedSizeScope="True"
                  Grid.Column="0" 
                  ItemsSource="{Binding }" 
                  ItemTemplateSelector="{StaticResource BookTemplateSelector}" 
                 IsSynchronizedWithCurrentItem="True" />
-        <StackPanel Grid.Column="1">
+        <GridSplitter Grid.Column="0" Width="4" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="4,0" />
+        <StackPanel Grid.Column="1" Margin="4">
             <Button Content="{Binding / }" ContentTemplateSelector="{StaticResource BookTemplateSelector}" />
             <TextBlock Text="{Binding /Title, Mode=OneWay}" />
             <TextBlock Text="{Binding /Publisher, Mode=OneWay}" />
