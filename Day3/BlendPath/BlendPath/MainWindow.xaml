@@ -1,0 +1,50 @@
+﻿<Window x:Class="BlendPath.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlendPath"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path">
+                                                <EasingColorKeyFrame KeyTime="0" Value="#FFE0CE59"/>
+                                                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FFC7E059"/>
+                                                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FFAED114"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Path x:Name="path" Data="M444.97025,85.242563 C423.09257,66.490263 404.52442,65.677346 371.85812,65.677346 361.50645,65.677346 323.79957,73.61272 368.76888,101.71854 372.49396,104.04671 378.60062,103.75242 378.03661,109.95652 377.39325,117.03355 375.81407,116.12309 364.64989,119.22426 341.10577,125.76429 313.87898,131.15133 292.56751,143.93822 279.67583,151.67322 267.83741,204.69336 325.51945,204.69336 335.89312,204.69336 337.15191,206.54937 346.11442,200.57437 349.73479,198.16079 361.27089,194.52512&#xD;&#xA;362.59039,189.24714 365.1758,178.90551 360.41484,159.80506 371.85812,152.1762 379.10141,147.34734 386.05277,150.98008 394.51259,157.32494 398.45597,160.28248 401.38989,163.33797 405.83982,165.56293 415.00171,170.14388 424.38436,172.51146 435.70252,169.68192 450.11107,166.07978 442.52435,142.26311 439.82151,123.34325 437.36511,106.14843 437.06325,99.401614 444.97025,85.242563 z" Fill="#FF5971E0" Stretch="Fill" Stroke="Black"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Height="140.289" Margin="281.954,65.677,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="164.016"/>
+
+    </Grid>
+</Window>
